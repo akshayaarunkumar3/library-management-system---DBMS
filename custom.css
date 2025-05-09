@@ -1,0 +1,86 @@
+/* Custom styles for Library Management System */
+
+/* Dashboard Cards Hover Effect */
+.card {
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Navbar active state */
+.navbar-nav .nav-link.active {
+    font-weight: bold;
+}
+
+/* Table hover styles */
+.table-hover tbody tr:hover {
+    background-color: rgba(var(--bs-info-rgb), 0.1);
+}
+
+/* Custom badge status colors */
+.badge.bg-success {
+    background-color: var(--bs-success) !important;
+}
+
+.badge.bg-danger {
+    background-color: var(--bs-danger) !important;
+}
+
+.badge.bg-warning {
+    background-color: var(--bs-warning) !important;
+}
+
+.badge.bg-primary {
+    background-color: var(--bs-primary) !important;
+}
+
+/* Footer styles */
+.footer {
+    margin-top: 2rem;
+    padding: 1.5rem 0;
+    border-top: 1px solid rgba(var(--bs-secondary-rgb), 0.2);
+}
+
+/* Forms */
+.form-label {
+    font-weight: 500;
+}
+
+.form-text {
+    font-size: 0.8rem;
+}
+
+/* Page transitions */
+main {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive margins and padding adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    .card-body {
+        padding: 1rem;
+    }
+}
